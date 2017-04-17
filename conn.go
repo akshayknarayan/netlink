@@ -279,6 +279,9 @@ type Config struct {
 	// no multicast group subscriptions will be made.
 	Groups uint32
 
+	// Set the PID of the connection, which netlink will use as an address
+	Pid uint32
+
 	// Testing is a special hook used to configure a netlink.Conn for
 	// testing with nltest.  It should not be used by other applications.
 	Testing interface{}
